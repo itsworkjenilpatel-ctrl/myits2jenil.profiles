@@ -22,10 +22,14 @@
     "Discord Bot Development (Node.js / Python)",
     "Server Hosting & Network Management"
   ],
+  "availableForFreelance": true,
+  "resumeUrl": "/resume.pdf",
+  "projectsUrl": "#projects",
   "socials": {
     "github": "https://github.com/",
     "instagram": "https://instagram.com/",
     "contact": "mailto:contact@example.com",
-    "discord": "https://dsc.gg/synoraxdev"
+    "discord": "https://dsc.gg/synoraxdev",
+    "youtube": ""
   }
 }

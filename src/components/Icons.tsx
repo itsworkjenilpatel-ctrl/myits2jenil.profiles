@@ -42,6 +42,35 @@ export function LocationIcon() {
   )
 }
 
+export function YoutubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+      <rect x="2.5" y="5.5" width="19" height="13" rx="4" />
+      <path d="M10.5 9.6v4.8l4.4-2.4-4.4-2.4Z" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+export function DownloadIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+      <path d="M12 3v12" strokeLinecap="round" />
+      <path d="M7 10.5 12 15l5-4.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4.5 18.5h15" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+export function RocketIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+      <path d="M13.5 3.5c3 0 5.5 2.6 5.5 6.6 0 3.4-2.3 6.5-4.3 8.4l-1.2-3.2-3.2-1.2c1.9-2 5-4.3 8.4-4.3" />
+      <path d="M11.5 14.5 5.8 20.2c-.5.5-1.4.1-1.3-.6l.9-4.6 4.1-1" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="14.5" cy="9.5" r="1.6" />
+    </svg>
+  )
+}
+
 export function StatusIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">

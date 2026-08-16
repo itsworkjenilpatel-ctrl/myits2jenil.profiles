@@ -15,11 +15,15 @@ export interface SiteConfig {
     bio: string
   }
   skills?: string[]
+  availableForFreelance?: boolean
+  resumeUrl?: string
+  projectsUrl?: string
   socials: {
     github?: string
     instagram?: string
     contact?: string
     discord?: string
+    youtube?: string
   }
 }
 
