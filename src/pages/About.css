@@ -1,0 +1,277 @@
+.about {
+  flex: 1;
+  display: flex;
+  min-height: calc(100dvh - var(--nav-h));
+  position: relative;
+  overflow: hidden;
+}
+
+.about__glow {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(138, 92, 246, 0.16) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.about__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--line);
+  padding: 48px;
+}
+
+.about__logo-ring {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__logo-ring::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+}
+
+.about__logo-ring::after {
+  content: '';
+  position: absolute;
+  inset: -34px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+
+.about__logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  object-fit: cover;
+  background: var(--bg-elevated);
+  box-shadow: 0 0 0 1px var(--line-strong), 0 24px 60px -20px rgba(138, 92, 246, 0.5);
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 64px;
+  gap: 24px;
+}
+
+.about__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about__eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.about__title {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.08;
+}
+
+.about__title-accent {
+  color: var(--accent);
+}
+
+.about__realname {
+  font-size: 14px;
+  color: var(--text-faint);
+  margin-top: -14px;
+  letter-spacing: 0.01em;
+}
+
+.about__role-line {
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.about__role-text {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+
+.about__role-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  animation: role-pulse 2.2s ease-in-out infinite;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+@keyframes role-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+}
+
+.about__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.about__meta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.about__meta-tag:hover {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+}
+
+.about__meta-tag svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.about__bio {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--text-dim);
+  max-width: 50ch;
+  letter-spacing: 0.005em;
+}
+
+.about__tagline {
+  font-size: 14px;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.about__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.about__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.about__btn:hover {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.about__btn svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.about__btn--primary svg {
+  color: var(--accent);
+}
+
+.about__btn--discord svg {
+  color: #5865f2;
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__visual {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding: 40px 24px 32px;
+  }
+  .about__logo-ring {
+    width: 140px;
+    height: 140px;
+  }
+  .about__logo-ring::after {
+    inset: -20px;
+  }
+  .about__logo {
+    width: 66px;
+    height: 66px;
+    border-radius: 16px;
+  }
+  .about__content {
+    padding: 32px 22px 48px;
+    gap: 18px;
+  }
+  .about__bio {
+    max-width: none;
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+  .about__role-text {
+    font-size: 13.5px;
+  }
+  .about__actions {
+    flex-direction: column;
+  }
+  .about__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "developerName": "Lucid",
+  "navLogo": "/logo.svg",
+  "developerLogo": "/profile.jpg",
+  "roles": [
+    "Discord Server Development",
+    "Discord Bot Development (Node.js / Python)",
+    "Server Hosting & Network Management",
+    "IT Management"
+  ],
+  "tagline": "Building reliable systems, one server at a time.",
+  "profile": {
+    "realName": "Jenil Moradiya",
+    "age": 18,
+    "status": "Single",
+    "location": "Gujarat, India",
+    "education": "Pursuing a Diploma in Computer Engineering at Apollo Institute (currently in Semester 3)",
+    "bio": "I specialize in Discord server development, Discord bot development using Node.js and Python, and professional network hosting and management. I focus on building well-structured, reliable systems for communities and teams."
+  },
+  "skills": [
+    "Discord Server Development",
+    "Discord Bot Development (Node.js / Python)",
+    "Server Hosting & Network Management"
+  ],
+  "socials": {
+    "github": "https://github.com/",
+    "instagram": "https://instagram.com/",
+    "contact": "mailto:contact@example.com",
+    "discord": "https://dsc.gg/synoraxdev"
+  }
+}
