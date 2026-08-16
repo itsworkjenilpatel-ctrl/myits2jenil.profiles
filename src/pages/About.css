@@ -61,6 +61,21 @@
   color: var(--accent);
 }
 
+.about__realname {
+  font-size: 13.5px;
+  color: var(--text-faint);
+  letter-spacing: 0.01em;
+  margin-top: -8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.about__realname-sep {
+  color: var(--line-strong);
+  margin: 0 2px;
+}
+
 .about__role-text {
   font-size: clamp(15px, 2vw, 17px);
   color: var(--text-dim);
@@ -180,26 +195,66 @@
 
 @media (max-width: 640px) {
   .about {
-    padding: 36px 18px;
+    padding: 32px 18px;
     align-items: flex-start;
+    min-height: auto;
+  }
+  .about__glow {
+    top: -8%;
+    width: 100%;
+    height: 40%;
   }
   .about__hero {
-    gap: 16px;
+    gap: 14px;
+  }
+  .about__badge {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+  .about__title {
+    font-size: clamp(30px, 9vw, 40px);
+  }
+  .about__realname {
+    font-size: 12.5px;
+    margin-top: -4px;
+  }
+  .about__role-text {
+    font-size: 14px;
   }
   .about__bio {
     font-size: 14.5px;
+    line-height: 1.7;
+    max-width: none;
   }
   .about__actions {
     flex-direction: column;
+    gap: 10px;
   }
   .about__btn {
     width: 100%;
     justify-content: center;
+    padding: 12px 20px;
   }
   .about__meta {
-    gap: 10px;
+    gap: 8px;
+    margin-top: 4px;
   }
   .about__meta-sep {
     display: none;
+  }
+  .about__meta-item {
+    font-size: 12.5px;
+  }
+  .about__meta-link {
+    padding: 5px 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about__title {
+    font-size: 28px;
+  }
+  .about__realname {
+    font-size: 11.5px;
   }
 }

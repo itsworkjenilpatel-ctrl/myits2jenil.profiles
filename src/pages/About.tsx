@@ -41,6 +41,12 @@ export default function About() {
           Hi, I'm <span className="about__title-accent">{config.developerName}</span>
         </h1>
 
+        {config.profile?.realName && (
+          <p className="about__realname">
+            Real name: {config.profile.realName} <span className="about__realname-sep">·</span> Dev name: {config.developerName}
+          </p>
+        )}
+
         <p className="about__role-text mono">{currentRole}</p>
 
         <p className="about__bio">
