@@ -42,6 +42,25 @@ export function LocationIcon() {
   )
 }
 
+export function ExternalLinkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+      <path d="M9 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14 4h6v6" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M20 4 11 13" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+export function CodeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+      <path d="M8.5 8 4.5 12l4 4" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15.5 8l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 export function YoutubeIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">

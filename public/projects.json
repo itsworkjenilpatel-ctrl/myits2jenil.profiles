@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Botnix Cloud — Website",
+    "image": "/projects/botnix-cloud.jpg",
+    "shortDescription": "Official website for my hosting service. Built with Next.js and Framer Motion, featuring live server stats.",
+    "description": "Official website for my hosting service. Built with Next.js and Framer Motion, featuring live server stats, plan pricing, and an animated hero section showcasing the brand.",
+    "tags": ["Next.js", "Tailwind", "Framer Motion"],
+    "links": [
+      { "label": "Live", "url": "https://example.com", "type": "live" },
+      { "label": "Code", "url": "https://github.com/example/botnix-cloud", "type": "code" }
+    ]
+  },
+  {
+    "name": "Synora Ticket Bot",
+    "image": "/projects/synora-ticket-bot.jpg",
+    "shortDescription": "Discord support ticket bot with Components V2, transcripts, and staff claiming system.",
+    "description": "A full-featured Discord support ticket bot built with discord.js v14 (ESM, Components V2). Includes ticket claiming, auto transcripts, category-based routing, and a staff dashboard for managing open tickets.",
+    "tags": ["Discord.js v14", "Node.js", "MongoDB"],
+    "links": [
+      { "label": "Code", "url": "https://github.com/example/synora-ticket-bot", "type": "code" },
+      { "label": "Invite Bot", "url": "https://discord.com/oauth2/authorize", "type": "live" }
+    ]
+  },
+  {
+    "name": "Arix Panel Theme",
+    "image": "/projects/arix-theme.jpg",
+    "shortDescription": "A modern Pterodactyl panel theme built with React and TypeScript.",
+    "description": "A modern, clean Pterodactyl panel theme rebuilt from the ground up with React, TypeScript, and a custom PHP integration layer. Focused on speed and a minimal, professional dashboard experience.",
+    "tags": ["React", "TypeScript", "PHP"],
+    "links": [
+      { "label": "Preview", "url": "https://example.com/arix-demo", "type": "live" },
+      { "label": "Code", "url": "https://github.com/example/arix-theme", "type": "code" },
+      { "label": "Docs", "url": "https://example.com/arix-docs", "type": "external" }
+    ]
+  }
+]
