@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { NavLink } from 'react-router-dom'
 import { useConfig } from '../hooks/useConfig'
 import './Navbar.css'
@@ -20,7 +21,7 @@ export default function Navbar() {
   }, [open])
 
   return (
-    <header className="nav">
+    <header className={'nav' + (open ? ' is-menu-open' : '')}>
       <div className="container nav__inner">
         <div className="nav__brand">
           <img className="nav__logo" src={config.navLogo ?? config.developerLogo} alt={`${config.developerName} logo`} />
@@ -54,21 +55,23 @@ export default function Navbar() {
         </button>
       </div>
 
-      {open && (
-        <div className="nav__mobile">
-          {NAV_ITEMS.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              end
-              onClick={() => setOpen(false)}
-              className={({ isActive }) => 'nav__mobile-link' + (isActive ? ' is-active' : '')}
-            >
-              {item.label}
-            </NavLink>
-          ))}
-        </div>
-      )}
+      {open &&
+        createPortal(
+          <div className="nav__mobile">
+            {NAV_ITEMS.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                end
+                onClick={() => setOpen(false)}
+                className={({ isActive }) => 'nav__mobile-link' + (isActive ? ' is-active' : '')}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </div>,
+          document.body,
+        )}
     </header>
   )
 }
