@@ -1,7 +1,12 @@
 .projects {
   position: relative;
-  padding: 72px 24px 96px;
-  border-top: 1px solid var(--line);
+  min-height: calc(100dvh - var(--nav-h));
+  padding: 64px 24px 96px;
+}
+
+.projects__empty {
+  font-size: 14px;
+  color: var(--text-dim);
 }
 
 .projects__inner {

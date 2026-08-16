@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useConfig } from '../hooks/useConfig'
 import {
   GithubIcon,
@@ -66,12 +67,10 @@ export default function About() {
               Download Résumé
             </a>
           )}
-          {config.projectsUrl && (
-            <a className="about__btn" href={config.projectsUrl}>
-              <RocketIcon />
-              View Projects
-            </a>
-          )}
+          <Link className="about__btn" to="/projects">
+            <RocketIcon />
+            View Projects
+          </Link>
         </div>
 
         <div className="about__meta">

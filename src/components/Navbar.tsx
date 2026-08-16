@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom'
 import { useConfig } from '../hooks/useConfig'
 import './Navbar.css'
 
-const NAV_ITEMS = [{ label: 'About', path: '/' }]
+const NAV_ITEMS = [
+  { label: 'About', path: '/' },
+  { label: 'Projects', path: '/projects' },
+]
 
 export default function Navbar() {
   const { config } = useConfig()

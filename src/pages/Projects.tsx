@@ -10,15 +10,17 @@ function linkIcon(type?: ProjectLink['type']) {
 export default function Projects() {
   const { projects, loading } = useProjects()
 
-  if (!loading && projects.length === 0) return null
-
   return (
-    <section className="projects" id="projects">
+    <section className="projects">
       <div className="projects__inner">
         <div className="projects__header">
           <span className="projects__eyebrow">Portfolio</span>
           <h2 className="projects__title">Featured Projects</h2>
         </div>
+
+        {!loading && projects.length === 0 && (
+          <p className="projects__empty">No projects added yet.</p>
+        )}
 
         <div className="projects__grid">
           {projects.map((project) => (
